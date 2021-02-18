@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(240, 242, 245);
+  position: relative;
+}
+.page {
+  text-align: center
+ 
+}
+.login {
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(231, 233, 235) 10px 10px 10px 10px;
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+  border-radius: 10px;
+}
+.text{
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80%;
+  margin-left: 50px;
+}
+.email,
+.password {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  margin:5px;
+  width: 370px;
+  border-width: 0.5px;
+  border-color: rgb(82, 102, 131);
+  border-style: solid;
+  font-size: medium;
+}
+.email:focus{
+  outline: none !important;
+  border-color:rgb(24,119,242) ;
+  box-shadow: 0 0 3px rgb(24,119,242)  ;
+}
+.password:focus{
+  outline: none !important;
+  border-color:rgb(24,119,242) ;
+  box-shadow: 0 0 3px rgb(24,119,242)  ;
+}
+.btn{
+  outline: none !important;
+  background-color:rgb(24,119,242) ;
+  border-radius: 5px;
+ padding:10px ;
+ color:#fff;
+ font-size: large;
+ margin: 10px;
+ border-width: 0px;
+}
+.btn:hover{
+  background-color: rgb(24,110,240) ;
+}
+.btn2{
+  outline: none !important;
+  background-color: rgb(66,183,42);
+  border-radius: 5px;
+  color:#fff;
+  padding: 10px;
+  font-size:large;
+  margin: 20px;
+  border-width: 0px;
+}
+.btn2:hover{
+  background-color: rgb(66,175,42)  ;
+}
+.link{
+  color: rgb(24,119,242) ;
+  padding: 10px 10px 20px;
+text-decoration: none;
+}
+.link:hover{
+  text-decoration: underline;
+}
