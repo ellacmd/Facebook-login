@@ -4,92 +4,118 @@
 }
 body {
   background-color: rgb(240, 242, 245);
-  position: relative;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
+h2 {
+  text-align: center;
+  color: rgb(49, 30, 39);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
 .page {
-  text-align: center
- 
+  height: 100vh;
+}
+.flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .login {
   width: 400px;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgb(231, 233, 235) 10px 10px 10px 10px;
-  padding: 10px;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top: 25%;
+  box-shadow: rgb(231, 233, 235) 5px 5px 5px 5px;
+  padding: 30px 20px 20px;
   border-radius: 10px;
 }
-.text{
-  display: inline-flex;
-  flex-direction: column;
-  position: absolute;
-  top: 80%;
-  margin-left: 50px;
-}
+
 .email,
 .password {
-  display: block;
   padding: 10px;
   border-radius: 5px;
-  margin:5px;
-  width: 370px;
+  margin: 5px 0;
   border-width: 0.5px;
-  border-color: rgb(82, 102, 131);
+  width: 100%;
+  border-color: rgb(221, 223, 226);
   border-style: solid;
   font-size: medium;
+  outline-width: 0px;
 }
-.email:focus{
-  outline: none !important;
-  border-color:rgb(24,119,242) ;
-  box-shadow: 0 0 3px rgb(24,119,242)  ;
+.email:focus {
+  border-color: rgb(24, 119, 242);
+  box-shadow: 0 0 3px rgb(24, 119, 242);
 }
-.password:focus{
-  outline: none !important;
-  border-color:rgb(24,119,242) ;
-  box-shadow: 0 0 3px rgb(24,119,242)  ;
+.password:focus {
+  border-color: rgb(24, 119, 242);
+  box-shadow: 0 0 3px rgb(24, 119, 242);
 }
-.btn{
-  outline: none !important;
-  background-color:rgb(24,119,242) ;
+.btn {
+  outline: none;
+  background-color: rgb(24, 119, 242);
   border-radius: 5px;
- padding:10px ;
- color:#fff;
- font-size: large;
- margin: 10px;
- border-width: 0px;
- width: 370px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: large;
+  border: none;
+  width: 100%;
+  margin: 5px 0;
 }
-.btn:hover{
-  background-color: rgb(24,110,240) ;
+.btn:hover {
+  background-color: rgb(24, 110, 240);
 }
-.btn2{
-  outline: none !important;
-  background-color: rgb(66,183,42);
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.btn2 {
+  outline: none;
+  background-color: rgb(66, 183, 42);
   border-radius: 5px;
-  color:#fff;
-  padding: 10px;
-  font-size:large;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: large;
   margin: 20px;
   border-width: 0px;
 }
-.btn2:hover{
-  background-color: rgb(66,175,42)  ;
+.btn2:hover {
+  background-color: rgb(66, 175, 42);
 }
-.link{
-  color: rgb(24,119,242) ;
-  padding: 10px 10px 20px;
-text-decoration: none;
+.link-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
-.link:hover{
+.link {
+  color: rgb(24, 119, 242);
+  text-decoration: none;
+}
+
+.link:hover {
   text-decoration: underline;
 }
-.link2{
+
+.text {
+  margin-top: 10px;
+}
+.link2 {
   text-decoration: none;
   color: black;
 }
-.link2:hover{
+.link2:hover {
   text-decoration: underline;
+}
+#invalid-email,
+#invalid-password {
+  color: rgb(240, 40, 73);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.error-link:hover {
+  text-decoration: underline;
+}
+.error-border {
+  border-color: rgb(240, 40, 73);
 }
